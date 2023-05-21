@@ -1,0 +1,237 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.nav {
+    color: white;
+    background-color: #008080;
+    height: 4rem;
+}
+
+.mainContainer {
+    display: grid;
+    min-height: 100vh;
+    grid-template-columns: 40% 60%;
+}
+
+.leftContainer {
+    display: inline-block;
+    min-height: calc(100vh-4rem);
+}
+
+.leftActions {
+    padding: 1rem;
+    border-bottom: 1px solid black;
+}
+
+.disscussionShower {
+    max-height: 100vh;
+    background-color: #f5f5f5;
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
+
+
+.rightContainer {
+    border-left: 1px solid black;
+    padding: 2rem;
+}
+
+
+.disscussionShower .listItems {
+    /* width: 100%; */
+    list-style: none;
+    padding: .5rem;
+    text-align: left;
+    border-bottom: 1px solid rgb(189, 189, 189);
+    cursor: pointer;
+    transition: all .5s;
+    /* max-height: 6.5rem; */
+    overflow: hidden;
+}
+
+.disscussionShower .listItems:hover {
+    background-color: #0080ff11;
+    color: #008080;
+    transform: 1;
+}
+
+.listItems p{
+    pointer-events: none;
+    text-align: right;
+    padding-right: .7rem;
+}
+
+.dissListTitle {
+    font-size: 1.5em;
+}
+
+#disscussList {
+    padding: 0;
+}
+
+#pageTitle {
+    text-align: center;
+    height: auto;
+    display: inline-block;
+    padding-left: 1rem;
+    padding-top: .5rem;
+    font-size: 2em;
+}
+
+#addDissButton,
+#submitDiss,
+#responseSubmit {
+    color: white;
+    background-color: #709dce;
+    outline: #008080;
+    border: .1rem solid #cce1f7;
+    border-radius: .3rem;
+    padding: .5rem;
+    cursor: pointer;
+    max-width: 100%;
+}
+
+#addDissButton:hover,
+#submitDiss:hover,
+#resolveButton:hover,
+#responseSubmit:hover {
+    background-color: #055ebc;
+    transition: all 1s;
+}
+
+#descriptionEditText {
+    max-width: 100%;
+    min-width: 100%;
+    margin-top: 1rem;
+    display: block;
+    border: .1rem solid #cce1f7;
+    max-height: 15rem;
+}
+
+#responseText {
+    max-width: 100%;
+    min-width: 100%;
+    margin-top: 1rem;
+    display: block;
+    border: .1rem solid #cce1f7;
+    max-height: 15rem;
+}
+
+.searchElemClass {
+    border: .1rem solid #cce1f7;
+    border-radius: .3rem;
+    padding: .5rem;
+    margin-top: 1rem;
+    display: block;
+    max-width: 100%;
+}
+
+.searchElemClass:active,
+#questionDesp:active {
+    border-color: aqua;
+    /* have to do it later */
+}
+
+
+
+/* //cmmnts */
+
+.queCont {
+    background-color: #f5f5f5;
+    padding: 2rem;
+    word-wrap: break-word;
+}
+
+.title {
+    font-size: 1.5em;
+}
+
+
+.resolveContainer {
+    text-align: right;
+    padding: 1rem;
+}
+
+
+
+#resolveButton {
+    color: white;
+    background-color: #709dce;
+    outline: #008080;
+    border: .1rem solid #cce1f7;
+    border-radius: .3rem;
+    padding: .5rem;
+    cursor: pointer;
+}
+
+/* //response list */
+.responseListCont {
+    background-color: #f5f5f5;
+}
+
+.responseItem {
+    border-bottom: 1px solid rgb(170, 165, 165);
+    word-wrap: break-word;
+    padding: 1rem;
+}
+
+
+.solnUserName {
+    font-size: 1.2em;
+    font-weight: 600;
+    padding-top: .2rem;
+    padding-left: .4rem;
+    margin: 0;
+}
+
+.responseSolnText {
+    margin: 0;
+    padding: .4rem;
+}
+
+
+.addResponseHolder {
+    margin-top: 2rem;
+}
+
+.responseSubmitContainer {
+    text-align: right;
+    padding: 1rem;
+}
+
+.favClass{
+    display: inline-block;
+    width: 1rem;
+    height: 1rem;
+    
+}
+
+.favClass:hover{
+    height: 1.25rem;
+    width: 1.25rem;
+    transition: all .5s;
+}
+
+.actionDivForQuestion{
+    margin-top: 1rem;
+    display: flex;
+    justify-content:safe;
+    align-items: center;
+}
+
+.dislikeImage{
+    margin-left: 2rem;
+}
+
+.likeImage:hover, .dislikeImage:hover{
+    height: 1.25rem;
+    width: 1.25rem;
+    transition: all .5s;
+}
+
+.heighlight{
+    background-color: #b4ffb1;
+    color: black;
+}
